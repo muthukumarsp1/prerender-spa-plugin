@@ -28,7 +28,7 @@ SimpleHtmlPrecompiler.prototype.apply = function (compiler) {
               if (error) {
                 return reject('Folder could not be created: ' + folder + '\n' + error)
               }
-              var file = Path.join(folder, outputPath+'.html')
+              var file = Path.join(folder, outputPath)
               FS.writeFile(
                 file,
                 prerenderedHTML,
